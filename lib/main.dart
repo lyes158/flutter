@@ -17,27 +17,21 @@ class MainApp extends StatelessWidget {
               Text('Hello World!'),
               Text('College Boreal'),
 
-              Container(
-                margin: EdgeInsets.all(20),
-                padding: EdgeInsets.all(16),
-                decoration: BoxDecoration(
-                  color: Colors.green,
-                  borderRadius: BorderRadius.circular(20),
-                ),
-                child: Text(
-                  'Boîte stylisée avec Container',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 18,
-                  ),
-                ),
-              ),
-
-              Text('texteeeeee'),
-            ],
-          ),
-        ),
-      ),
-    );
+Container(
+margin: EdgeInsets.all(20),
+ padding: EdgeInsets.all(16),
+decoration: BoxDecoration(color: Colors.green,borderRadius: BorderRadius.circular(20),),
+ child: Text('Boîte stylisée avec Container',style: TextStyle(color: Colors.white,fontSize: 18,)
+ ,),),
+ 
+Text('texteeeeee'),
+Stack(alignment: Alignment.topRight,
+children: [
+  Container(width: 200,height: 200,color: Colors.blue,),
+  Icon(
+    Icons.star,size: 100,color: Colors.amber,),
+    Text('Superposé !',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold,),
+),
+  ],),],),),),);
   }
 }
