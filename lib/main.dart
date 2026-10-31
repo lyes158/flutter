@@ -27,7 +27,7 @@ borderRadius: BorderRadius.circular(20),),
 
 Text('texteeeeee'),
 
-Stack(alignment: Alignment.topRight,
+Stack(alignment: Alignment.bottomLeft,
  children: [
   Container(width: 200,height: 200,color: Colors.blue, ),
   Icon(
@@ -42,7 +42,18 @@ Stack(alignment: Alignment.topRight,
        Icon(Icons.star, color: Colors.amber, size: 40),
        Icon(Icons.settings, color: Colors.grey, size: 40),
        Icon(Icons.person, color: Colors.green, size: 40),
+  Column( 
+  mainAxisAlignment: MainAxisAlignment.spaceAround,
+  crossAxisAlignment: CrossAxisAlignment.end, 
+  children: [ 
+    Text('Titre principal', style: TextStyle(fontSize: 22)), 
+    SizedBox(height: 20), 
+    Text('Sous-titre ou description'), 
+    Icon(Icons.thumb_up, color: Colors.green, size: 40), 
+  ], 
+), 
    ],    ),    ],    ),     ),    ),
     );
   }
 }
+
