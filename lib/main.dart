@@ -18,11 +18,12 @@ class MainApp extends StatelessWidget {
               Text('College Boreal'),
 
 Container( 
- margin: EdgeInsets.all(20),
- padding: EdgeInsets.all(16),
-decoration: BoxDecoration(color: Colors.green,
-borderRadius: BorderRadius.circular(20),),
-  child: Text('Boite stylisee avec Container',style: TextStyle(color: Colors.white,fontSize: 18,),
+ margin: EdgeInsets.all(30),
+padding: EdgeInsets.all(25),
+decoration: BoxDecoration( color: Colors.purple,
+borderRadius: BorderRadius.circular(40),
+),
+child: Text('Boite stylisee avec Container',style: TextStyle(color: Colors.white,fontSize: 18,),
   ),),
 
 Text('texteeeeee'),
